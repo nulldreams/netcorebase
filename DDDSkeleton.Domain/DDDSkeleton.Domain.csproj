@@ -30,12 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\Item.cs" />
+    <Compile Include="Entities\ItemList.cs" />
+    <Compile Include="Interfaces\Repositories\IBaseRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IItemListRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IItemRepository.cs" />
+    <Compile Include="Interfaces\Services\IItemListService.cs" />
+    <Compile Include="Interfaces\Services\IItemService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ItemListService.cs" />
+    <Compile Include="Services\ItemService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
