@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  basesolution.api:
+    image: ${DOCKER_REGISTRY}basesolutionapi
+    build:
+      context: .
+      dockerfile: ../BaseSolution.API/Dockerfile
